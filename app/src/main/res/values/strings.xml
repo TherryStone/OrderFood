@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">OrderFood</string>
+    <string name="title_register">Register</string>
+    <string name="user_name_hint">User name</string>
+    <string name="pass_word_hint">Pass word</string>
+    <string name="birth_day_hint">Birth day</string>
+    <string name="pass_port_hint">Number pass port</string>
+    <string name="user_name">Please input user name</string>
+    <string name="password">Please input password</string>
+    <string name="add_employee_success">Add Success</string>
+    <string name="add_employee_fail">Add employee fail</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="login_succes">Login Success</string>
+    <string name="login_fail">Login fail</string>
+    <string name="name_home">Home</string>
+    <string name="name_menu_order">Thực đơn</string>
+    <string name="name_employee">Nhân viên</string>
+    <string name="name_report">Báo cáo</string>
+    <string name="name_settings">Cài đặt</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_add_table_food">Thêm bàn ăn</string>
+    <string name="add_table_food">Thêm bàn ăn</string>
+</resources>
