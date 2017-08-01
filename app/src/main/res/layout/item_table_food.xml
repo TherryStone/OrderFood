@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_name_table_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ban 1"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imv_table_food"
+        android:layout_below="@+id/tv_name_table_food"
+        android:layout_width="@dimen/size_image"
+        android:layout_height="@dimen/size_image"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/banan"/>
+
+    <ImageView
+        android:id="@+id/imv_order_food"
+        android:layout_below="@+id/imv_table_food"
+        android:layout_width="@dimen/size_image"
+        android:layout_height="@dimen/size_image"
+
+        android:src="@drawable/goimon"/>
+    <ImageView
+        android:id="@+id/imv_thanh_toan"
+        android:layout_below="@+id/imv_table_food"
+        android:layout_width="@dimen/size_image"
+        android:layout_height="@dimen/size_image"
+
+        android:src="@drawable/thanhtoan"
+        android:layout_toRightOf="@+id/imv_order_food"/>
+    <ImageView
+        android:id="@+id/imv_cancel_table_food"
+        android:layout_below="@+id/imv_table_food"
+        android:layout_width="@dimen/size_image"
+        android:layout_height="@dimen/size_image"
+
+        android:src="@drawable/anbutton"
+        android:layout_toRightOf="@+id/imv_thanh_toan"/>
+</RelativeLayout>
