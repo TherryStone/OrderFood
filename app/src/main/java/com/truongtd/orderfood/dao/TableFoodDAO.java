@@ -36,7 +36,7 @@ public class TableFoodDAO {
         }
     }
 
-    public ArrayList<DinningTableFood> getDinningTable(){
+    public ArrayList<DinningTableFood> getAllDinningTable(){
 
         ArrayList<DinningTableFood> arrDinning = new ArrayList<>();
         String sqlDinningTable = "Select * from " + Database.TB_DINNING_TABLE;

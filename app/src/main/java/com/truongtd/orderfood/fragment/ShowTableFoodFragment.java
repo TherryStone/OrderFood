@@ -23,9 +23,7 @@ import com.truongtd.orderfood.dao.TableFoodDAO;
 import com.truongtd.orderfood.dto.DinningTableFood;
 
 import java.util.ArrayList;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
+import java.util.List;
 
 /**
  * Created by Truong_it on 7/16/2017.
@@ -33,8 +31,8 @@ import butterknife.ButterKnife;
 
 public class ShowTableFoodFragment extends Fragment{
     private static final String TAG = "TestLog" ;
-    GridView gvShowTableFood;
-    ArrayList<DinningTableFood> arrDinningTableFood;
+    GridView gvShowDiningTable;
+    ArrayList<DinningTableFood> lstDiningTable= new ArrayList<>();
     TableFoodDAO tableFoodDAO;
 
     @Nullable
@@ -42,15 +40,12 @@ public class ShowTableFoodFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view  = inflater.inflate(R.layout.activity_show_tabel_food, container, false);
         setHasOptionsMenu(true);
-        gvShowTableFood = (GridView) view.findViewById(R.id.gv_table_food);
-
-        tableFoodDAO = new TableFoodDAO(getActivity());
-
-        arrDinningTableFood = tableFoodDAO.getDinningTable();
-
-        TableFoodAdapter showTaleFoodAdapter = new TableFoodAdapter(getActivity(), R.layout.item_table_food, arrDinningTableFood);
-        gvShowTableFood.setAdapter(showTaleFoodAdapter);
-        showTaleFoodAdapter.notifyDataSetChanged();
+        gvShowDiningTable = (GridView) view.findViewById(R.id.gv_ban_an);
+        tableFoodDAO = new TableFoodDAO(getContext());
+        lstDiningTable = tableFoodDAO.getAllDinningTable();
+        TableFoodAdapter tableFoodAdapter = new TableFoodAdapter(getActivity(), R.layout.activity_show_tabel_food, lstDiningTable);
+        gvShowDiningTable.setAdapter(tableFoodAdapter);
+        tableFoodAdapter.notifyDataSetChanged();
         return view;
     }
 

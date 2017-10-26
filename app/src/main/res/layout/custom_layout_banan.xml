@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/name_banan"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Ban 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_below="@id/name_banan"
+        android:src="@drawable/banan"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_banan"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:layout_below="@id/img_banan"
+        android:src="@drawable/thanhtoan"
+        android:id="@+id/img_thanhtoan"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageView
+        android:layout_toRightOf="@id/img_thanhtoan"
+        android:layout_below="@id/img_banan"
+        android:src="@drawable/goimon"
+        android:id="@+id/img_goimon"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageView
+        android:layout_toRightOf="@id/img_goimon"
+        android:layout_below="@id/img_banan"
+        android:src="@drawable/anbutton"
+        android:id="@+id/img_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</RelativeLayout>
